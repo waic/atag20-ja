@@ -1758,7 +1758,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
         <em> 注記 1:</em> コンテナが開いている場合は、コンテナ内の有効なコンポーネント (リスト内のアイテム、メニュー内のアイテム、ツールバーのボタン、ダイアログボックス内のすべてのコンポーネント) はすべて表示されているとみなされる (したがって「少なくとも同程度目立つ」)。コンテナーをスクロールして表示可能にしなければならない場合も同様で、これは様々なスクリーンの大きさと<a href="#def-Author" title="定義: コンテンツ制作者" class="termdef">コンテンツ制作者</a>の設定が一定期間表示されるコンポーネントに影響することを考慮している。<br />
         <em> 注記 2:</em> 「オープニングアクション (Opening actions)」は、新しいコンポーネントを表示、又は有効とするために、コンテンツ制作者がユーザインタフェースの中のコンポーネントに対して起こすアクションである。
         例 : (a) サブメニューを表示するためのトップレベルメニューアイテムのキーボードショートカット、(b) ダイアログボックスを表示するためのボタンをキーボードで選択する、(c) 無効だったサブアイテムを有効にするためにチェックボックスをマウスでクリックするなど。新しいコンポーネントをアクション可能にしないアクション (フォーカスを移動する、リストをスクロールする)、は「オープニングアクション (opening actions)」としてカウントしない。<br />
-        <em> 注記 3:</em> クローズドコンテナ内のコンポーネントへのキーボードショートカットは、表示されていないコンポーネントが表示されるのではないため、&quot;オープニングアクション&quot; としてみなされない。クローズドコンテナ内のコンポーネントを表示するために  &quot;検索&quot; を使う必要がある場合も同じことが言える。<br />
+        <em> 注記 3:</em> 閉じられたコンテナ内のコンポーネントへのキーボードショートカットは、表示されていないコンポーネントが表示されるのではないため、&quot;オープニングアクション&quot; としてみなされない。閉じられたコンテナ内のコンポーネントを表示するために  &quot;検索&quot; を使う必要がある場合も同じことが言える。<br />
         <em> 注記 4:</em> &quot;デフォルト状態&quot; は、開発者により設定されたオーサリングセッション開始時の<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>の状態である。 多くのドキュメントオーサリングツールのデフォルト状態は<a href="#def-Editing-View" title="definition: editing views" class="termdef">編集ビュー</a>である。 </li>
       </ul>
     </dd>
@@ -1825,13 +1825,12 @@ div.toc ul.toc li ul.toc li ul.toc li a {
     <dt><a id="def-User-Agent" name="def-User-Agent"><dfn>ユーザエージェント</dfn></a> <!-- [adapted from WCAG 2.0] --></dt>
     <dd><a href="#def-Web-Content" title="definition: web content" class="termdef">ウェブコンテンツ</a>を取得し、レンダリングして<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザ</a>との対話を容易にする任意のソフトウェア（例えばウェブブラウザ、ブラウザプラグイン、メディアプレーヤー）
       <ul>
-        <li><a id="def-Inmarket-User-Agent" name="def-Inmarket-User-Agent"></a><dfn>市場にあるユーザエージェント:</dfn> 一般人が（無料又はそれ以外で）入手できるユーザエージェント。 通常、市場にあるユーザエージェントは、<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>とは別のソフトウェアになる。しかし時にソフトウェアは、ユーザエージェントとオーサリングツールの機能を併せ持つこともできる。これらの例は次のとおり：
+        <li><a id="def-Inmarket-User-Agent" name="def-Inmarket-User-Agent"></a><dfn>市場のユーザエージェント:</dfn> 一般人が（無料又はそれ以外で）入手できるユーザエージェント。 通常、市場のユーザエージェントは、<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>とは別のソフトウェアになる。しかし時にソフトウェアは、ユーザエージェントとオーサリングツールの機能を併せ持つこともできる。これらの例は次のとおり：
           <ul>
-            <li><dfn>プレビュー専用:</dfn> ユーザエージェントが関連するオーサリング機能から受け取ったウェブコンテンツをレンダリングのみできた場合、そのソフトウェアは<a class="termdef" href="#def-Preview" title="definition: preview">プレビュー</a>機能を備えたオーサリングツールである。このようなプレビューのみの機能は<em>市場にあるユーザエージェントとはみなされない。</em>.</li>
-            <li><a id="def-ua-with-authoring-tool-role" name="def-ua-with-authoring-tool-role"></a><dfn>オーサリングツールモードを持つユーザエージェント:</dfn> ユーザエージェント機能が、オーサリングツールの機能に送ることができる前にウェブコンテンツを取得し、オープンする必要がある場合、ソフトウェアはオーサリングツールモードを持つユーザエージェントである。ユーザエージェントがオーサリングツールモードによって生成したコンテンツをプレビューするために使用される場合、それは市場にあるユーザエージェントと見なされるべきである。</li>
+            <li><dfn>プレビュー専用:</dfn> ユーザエージェントが関連するオーサリング機能から受け取ったウェブコンテンツをレンダリングのみできた場合、そのソフトウェアは<a class="termdef" href="#def-Preview" title="definition: preview">プレビュー</a>機能を備えたオーサリングツールである。このようなプレビューのみの機能は<em>市場のユーザエージェントとはみなされない。</em>.</li>
+            <li><a id="def-ua-with-authoring-tool-role" name="def-ua-with-authoring-tool-role"></a><dfn>オーサリングツールモードを持つユーザエージェント:</dfn> ユーザエージェント機能が、オーサリングツールの機能に送ることができる前にウェブコンテンツを取得し、オープンする必要がある場合、ソフトウェアはオーサリングツールモードを持つユーザエージェントである。ユーザエージェントがオーサリングツールモードによって生成したコンテンツをプレビューするために使用される場合、それは市場のユーザエージェントと見なされるべきである。</li>
             <li><a id="def-comb-ua-authoring-tool" name="def-comb-ua-authoring-tool"></a><dfn>結合したユーザエージェント/オーサリングツール:</dfn> ユーザとの対話のデフォルトモードでウェブコンテンツの編集を可能にするユーザエージェント。 既に制作者はエンドユーザと同じようにコンテンツを経験しているので、これらのツールでは、プレビューは必要ない。</li>
           </ul>
-
         </li>
       </ul>
     </dd>
@@ -1845,7 +1844,7 @@ div.toc ul.toc li ul.toc li ul.toc li a {
       <ul>
 
         <li><a name="def-Editing-View" id="def-Editing-View"></a><dfn>編集ビュー:</dfn> コンテンツの一部又はすべてが編集可能であるビュー。又は </li>
-        <li><a name="def-Preview" id="def-Preview"></a><dfn>プレビュー:</dfn> <a href="#def-Authoring-Action" title="definition: authoring actions" class="termdef">オーサリングアクション</a>が提供されていないビュー（すなわち、ビューは編集できない）。 プレビューは、<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>で編集されているウェブコンテンツを<a class="termdef" href="#def-User-Agent" title="definition: user agent">ユーザエージェント</a>の<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザ</a>に見えるよう提示するために提供されている。 プレビューは、実際の<a class="termdef" href="#def-Inmarket-User-Agent" title="definition: in-market user agent">市場にあるユーザエージェント</a>を使用して実装することもできるが、無くてはならないものではない。</li>
+        <li><a name="def-Preview" id="def-Preview"></a><dfn>プレビュー:</dfn> <a href="#def-Authoring-Action" title="definition: authoring actions" class="termdef">オーサリングアクション</a>が提供されていないビュー（すなわち、ビューは編集できない）。 プレビューは、<a href="#def-Authoring-Tool" title="definition: authoring tool" class="termdef">オーサリングツール</a>で編集されているウェブコンテンツを<a class="termdef" href="#def-User-Agent" title="definition: user agent">ユーザエージェント</a>の<a href="#def-End-Users" title="definition: end user" class="termdef">エンドユーザ</a>に見えるよう提示するために提供されている。 プレビューは、実際の<a class="termdef" href="#def-Inmarket-User-Agent" title="definition: in-market user agent">市場のユーザエージェント</a>を使用して実装することもできるが、無くてはならないものではない。</li>
       </ul>
       ATAG 2.0は、コンテンツを提示するビューのアプローチをいくつか認識している:
       <ul>
